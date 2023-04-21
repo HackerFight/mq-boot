@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qiuguan.mq.demo.mapper.OrderMapper">
+    <select id="saveOrder" parameterType="com.qiuguan.mq.demo.biz.Order">
+       INSERT INTO order(order_id, buyer, order_detail_id) VALUES (#{orderId}, #{buyer}, #{orderDetail.orderDetailId})
+    </select>
+</mapper>

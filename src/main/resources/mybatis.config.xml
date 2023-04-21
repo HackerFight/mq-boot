@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--
+     不能这样指定 映射文件，启动报错；只能在 springboot的全局配置文件中指定，
+    <mappers>
+        <mapper resource="classpath:mybatis/mapper/*.xml"/>
+    </mappers>
+    -->
+</configuration>
